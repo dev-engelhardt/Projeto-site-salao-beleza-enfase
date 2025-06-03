@@ -1,0 +1,185 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f6fa;
+    color: #333;
+}
+header {
+    background: linear-gradient(120deg, #b48ad6 0%, #6a82fb 100%), url('https://www.transparenttextures.com/patterns/diamond-upholstery.png');
+    color: #fff;
+    padding: 3rem 1rem 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 24px #b48ad6a0;
+    position: relative;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    overflow: hidden;
+}
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-shadow: 2px 4px 16px #6a82fb80, 0 2px 4px #0004;
+}
+header p {
+    margin: 1rem 0 0 0;
+    font-size: 1.3rem;
+    text-shadow: 1px 2px 8px #6a82fb60;
+}
+nav {
+    background: #fff;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 8px #eee;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+nav a {
+    color: #b48ad6;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #8e5bb7;
+    text-decoration: underline;
+}
+section {
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #eee;
+    margin-top: 2rem;
+}
+.galeria {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+.galeria img {
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ccc;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.galeria img:hover {
+    transform: scale(1.08) rotate(-2deg);
+    box-shadow: 0 8px 24px #b48ad6;
+    cursor: pointer;
+}
+.agende {
+    background: #e9e2f3;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2rem auto;
+    box-shadow: 0 2px 8px #e0d3ee;
+    max-width: 900px;
+}
+.btn-whatsapp {
+    color: #fff;
+    background: #25d366;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px #b48ad6;
+}
+.btn-whatsapp:hover {
+    background: #128c7e;
+    box-shadow: 0 4px 16px #8e5bb7;
+}
+footer {
+    background: #b48ad6;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem 1rem 1rem;
+    margin-top: 2rem;
+    border-radius: 20px 20px 0 0;
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: auto;
+    gap: 2rem;
+}
+.footer-content > div {
+    flex: 1 1 250px;
+}
+.social {
+    margin: 1rem 0;
+}
+.social a {
+    margin: 0 0.5rem;
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.social a:hover {
+    color: #25d366;
+}
+.map-responsive {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #8e5bb7;
+    margin: 0 auto;
+    max-width: 350px;
+}
+.map-responsive iframe {
+    width: 100%;
+    height: 200px;
+    border: 0;
+}
+.copyright {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #eee;
+}
+.slogan {
+    font-size: 1.25rem;
+    font-style: italic;
+    margin-top: 0.7rem;
+    color: #ffe9fa;
+    text-shadow: 1px 2px 8px #6a82fb60;
+    letter-spacing: 1px;
+}
+@media (max-width: 900px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    section {
+        margin-top: 1rem;
+    }
+}
+@media (max-width: 600px) {
+    .galeria img {
+        width: 120px;
+        height: 80px;
+    }
+    section {
+        padding: 1rem 0.5rem;
+    }
+    .map-responsive iframe {
+        height: 150px;
+    }
+}

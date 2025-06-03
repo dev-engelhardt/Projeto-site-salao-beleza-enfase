@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salão Ênfase</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ícones de redes sociais (Font Awesome CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .ver-mais {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+        .btn-ver-mais {
+            background: #b48ad6;
+            color: #fff;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+            box-shadow: 0 2px 8px #b48ad6;
+            display: inline-block;
+        }
+        .btn-ver-mais:hover {
+            background: #8e5bb7;
+        }
+        .galeria img {
+            width: 200px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px #b48ad6a0;
+            transition: transform 0.4s cubic-bezier(.25,.8,.25,1), box-shadow 0.4s;
+            cursor: pointer;
+            z-index: 1;
+            position: relative;
+        }
+        .galeria img:hover {
+            transform: scale(2.2) translateY(-40px);
+            box-shadow: 0 16px 48px #6a82fbcc, 0 2px 8px #b48ad6;
+            z-index: 30;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Salão Ênfase</h1>
+        <p>Beleza e bem-estar em primeiro lugar</p>
+        <p class="slogan">"Dando Ênfase a você e sua beleza"</p>
+    </header>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#agende">Agende</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>O Salão Ênfase oferece serviços de cabelo, manicure, pedicure e estética com profissionais qualificados e atendimento personalizado.</p>
+    </section>
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <ul>
+            <li>Corte e escova</li>
+            <li>Coloração</li>
+            <li>Manicure & Pedicure</li>
+            <li>Progressivas</li>
+            <li>Mechas </li>
+            <li>Tratamentos capilares</li>
+        </ul>
+    </section>
+    <section id="galeria">
+        <h2>Galeria</h2>
+        <div class="galeria">
+            <img src="img/cabelo01.PNG" alt="Cabelo exemplo 1">
+            <img src="img/cabelo02.PNG" alt="Cabelo exemplo 2">
+            <img src="img/cabelo03.PNG" alt="Cabelo exemplo 3">
+            <img class="extra-img" style="display:none;" src="img/cabelo com mecha.png" alt="Cabelo exemplo 4">
+            <img class="extra-img" style="display:none;" src="img/mechas 2.png" alt="Cabelo exemplo 5">
+            <img class="extra-img" style="display:none;" src="img/mechas 3.PNG" alt="Cabelo exemplo 6">
+        </div>
+        <div class="ver-mais">
+            <a href="#" class="btn-ver-mais" id="btnVerMais">Ver mais fotos</a>
+            <a href="#" class="btn-ver-mais" id="btnVoltar" style="display:none;">Voltar</a>
+        </div>
+    </section>
+    <section id="agende" class="agende">
+        <h2>Agende seu horário</h2>
+        <p>Entre em contato pelo WhatsApp ou telefone para agendar seu atendimento!</p>
+        <a href="https://wa.me/5551999205506" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Agendar pelo WhatsApp</a>
+    </section>
+    <footer id="contato">
+        <div class="footer-content">
+            <div>
+                <p><strong>Contato:</strong> (51) 99920-5506</p>
+                <p><strong>Endereço:</strong> Rua Marcelo Gama, 3090 - Santa Helena</p>
+                <div class="social">
+                    <a href="https://www.instagram.com/lenirpuntel/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/lenir.amorim.298453" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/5551999205506" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="map-responsive">
+                <iframe 
+                    src="https://www.google.com/maps?q=Rua+Marcelo+Gama,+3090+-+Santa+Helena&output=embed"
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 Salão Enfâse</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
